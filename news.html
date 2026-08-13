@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News &amp; Updates — New Hope Ministries Foundation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <div class="brand-mark">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#152a4d" stroke-width="1.8"><path d="M12 2v20M8 6h8M6 10c0 4 2.5 7 6 8 3.5-1 6-4 6-8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <div class="brand-text">
+      <div class="name">NEW HOPE</div>
+      <div class="sub">MINISTRIES FOUNDATION</div>
+      <div class="tag">Restoring Hope. Transforming Lives.</div>
+    </div>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <div class="nav-item">
+      <span class="nav-label" tabindex="0">About Us
+        <svg class="caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </span>
+      <div class="dropdown">
+        <a href="mission-vision.html">Mission &amp; Vision</a>
+        <a href="our-story.html">Our Story</a>
+        <a href="team.html">Our Team</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <span class="nav-label" tabindex="0">Our Programs
+        <svg class="caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </span>
+      <div class="dropdown">
+        <a href="evangelism.html">Evangelism</a>
+        <a href="discipleship.html">Discipleship</a>
+        <a href="education.html">Education</a>
+        <a href="health.html">Health</a>
+        <a href="community-development.html">Community Development</a>
+        <a href="agriculture.html">Agriculture</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <span class="nav-label" tabindex="0">Get Involved
+        <svg class="caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </span>
+      <div class="dropdown">
+        <a href="donate.html">Donate</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="partner.html">Partner</a>
+      </div>
+    </div>
+    <a href="gallery.html">Gallery</a>
+    <a href="news.html" class="active">News</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+  <a href="donate.html" class="donate-btn">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 4.5-4 8-8 11z"/></svg>
+    Donate Now
+  </a>
+  <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+</header>
+
+<section class="page-hero news-hero">
+  <div class="page-hero-inner">
+    <h1>News &amp; Updates</h1>
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><span class="sep">/</span><span class="current">News</span>
+    </div>
+  </div>
+</section>
+
+<div class="news-toolbar">
+  <div class="news-toolbar-inner">
+    <div class="news-filters" id="newsFilters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="programs">Programs</button>
+      <button class="filter-btn" data-filter="community">Community</button>
+      <button class="filter-btn" data-filter="events">Events</button>
+      <button class="filter-btn" data-filter="announcements">Announcements</button>
+    </div>
+    <div class="news-search">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input type="text" id="newsSearch" placeholder="Search news...">
+    </div>
+  </div>
+</div>
+
+<section class="featured-article">
+  <div class="featured-card">
+    <div class="featured-img">
+      <span class="featured-badge">Featured</span>
+      <img src="newheader.JPG" alt="New community school opening">
+    </div>
+    <div class="featured-copy">
+      <div class="featured-meta">
+        <span class="tag-chip">ANNOUNCEMENTS</span>
+        <span>August 3, 2026</span>
+        <span>&middot; 4 min read</span>
+      </div>
+      <h2>New Community School Opens Its Doors To 300 Children</h2>
+      <p>After two years of construction and community fundraising, our newest school campus welcomed its first students this week, expanding access to quality education for families who previously walked hours to the nearest classroom.</p>
+      <a href="#" class="btn btn-gold read-more">Read Full Story
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="news-layout">
+  <div>
+    <div class="news-grid" id="newsGrid">
+
+      <article class="news-card" data-category="health" data-title="mobile health clinic reaches three new villages">
+        <div class="news-card-img">
+          <span class="news-card-cat">Programs</span>
+          <img src="mobile health.jpg" alt="Mobile health clinic">
+        </div>
+        <div class="news-card-body">
+          <div class="news-card-meta">July 28, 2026 &middot; 3 min read</div>
+          <h3>Mobile Health Clinic Reaches Three New Villages</h3>
+          <p>Our health team expanded its outreach route this month, bringing checkups and basic care to communities without a nearby clinic.</p>
+          <a href="#" class="read-more">Read More
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="news-card" data-category="events" data-title="volunteer mission trip july recap">
+        <div class="news-card-img">
+          <span class="news-card-cat">Events</span>
+          <img src="volunteernews.jpg" alt="Volunteer team group photo">
+        </div>
+        <div class="news-card-body">
+          <div class="news-card-meta">July 20, 2026 &middot; 5 min read</div>
+          <h3>Volunteer Mission Trip: July Recap</h3>
+          <p>A team of 18 volunteers spent ten days building classroom furniture and running a children's program alongside our staff.</p>
+          <a href="#" class="read-more">Read More
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="news-card" data-category="community" data-title="farmers cooperative doubles harvest yield">
+        <div class="news-card-img">
+          <span class="news-card-cat">Community</span>
+          <img src="farmer.jpg" alt="Farmers cooperative harvest">
+        </div>
+        <div class="news-card-body">
+          <div class="news-card-meta">July 12, 2026 &middot; 4 min read</div>
+          <h3>Farmers' Cooperative Doubles Harvest Yield</h3>
+          <p>A year after our agriculture training program launched, the local cooperative reports its best harvest in over a decade.</p>
+          <a href="#" class="read-more">Read More
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="news-card" data-category="announcements" data-title="foundation appoints new programs coordinator">
+        <div class="news-card-img">
+          <span class="news-card-cat">Announcements</span>
+          <img src="appoint.jpg" alt="Staff announcement">
+        </div>
+        <div class="news-card-body">
+          <div class="news-card-meta">July 5, 2026 &middot; 2 min read</div>
+          <h3>Foundation Appoints New Programs Coordinator</h3>
+          <p>We're pleased to welcome a new Programs Coordinator who will oversee education and community development initiatives.</p>
+          <a href="#" class="read-more">Read More
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="news-card" data-category="programs" data-title="discipleship program graduates first cohort">
+        <div class="news-card-img">
+          <span class="news-card-cat">Programs</span>
+          <img src="gtaduate.jpg" alt="Discipleship graduation">
+        </div>
+        <div class="news-card-body">
+          <div class="news-card-meta">June 27, 2026 &middot; 3 min read</div>
+          <h3>Discipleship Program Graduates First Cohort</h3>
+          <p>Twenty-two believers completed our year-long discipleship and mentoring track in a small graduation ceremony.</p>
+          <a href="#" class="read-more">Read More
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="news-card" data-category="community" data-title="clean water well completed in kolahun">
+        <div class="news-card-img">
+          <span class="news-card-cat">Community</span>
+          <img src="handpump.JPG" alt="New water well">
+        </div>
+        <div class="news-card-body">
+          <div class="news-card-meta">June 18, 2026 &middot; 3 min read</div>
+          <h3>Clean Water Well Completed In Kolahun</h3>
+          <p>A new borehole now serves over 400 residents who previously walked long distances for clean drinking water.</p>
+          <a href="#" class="read-more">Read More
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="news-card is-hidden" data-category="events" data-title="annual fundraising banquet set for october">
+        <div class="news-card-img">
+          <span class="news-card-cat">Events</span>
+          <img src="fundraising.jpg" alt="Fundraising banquet">
+        </div>
+        <div class="news-card-body">
+          <div class="news-card-meta">June 10, 2026 &middot; 2 min read</div>
+          <h3>Annual Fundraising Banquet Set For October</h3>
+          <p>Save the date, our annual banquet returns this fall to celebrate a year of programs and community impact.</p>
+          <a href="#" class="read-more">Read More
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="news-card is-hidden" data-category="programs" data-title="new scholarship fund launched for girls education">
+        <div class="news-card-img">
+          <span class="news-card-cat">Programs</span>
+          <img src="hero-photo.png" alt="Girls education scholarship">
+        </div>
+        <div class="news-card-body">
+          <div class="news-card-meta">June 2, 2026 &middot; 4 min read</div>
+          <h3>New Scholarship Fund Launched For Girls' Education</h3>
+          <p>A dedicated fund will cover school fees and supplies for 50 girls at risk of dropping out this year.</p>
+          <a href="#" class="read-more">Read More
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="news-card is-hidden" data-category="announcements" data-title="foundation receives community impact award">
+        <div class="news-card-img">
+          <span class="news-card-cat">Announcements</span>
+          <img src="handpump.JPG" alt="Community impact award">
+        </div>
+        <div class="news-card-body">
+          <div class="news-card-meta">May 22, 2026 &middot; 2 min read</div>
+          <h3>Foundation Receives Community Impact Award</h3>
+          <p>Local leaders recognized our team's work over the past five years with a regional community impact award.</p>
+          <a href="#" class="read-more">Read More
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="no-results" id="noResults">No articles match your search or filter. Try a different keyword or category.</p>
+
+    <div class="load-more-wrap">
+      <button class="load-more-btn" id="loadMoreBtn">Load More Articles</button>
+    </div>
+  </div>
+
+  <aside class="news-sidebar">
+    <div class="sidebar-box newsletter-box">
+      <h4>Stay Updated</h4>
+      <p>Get program updates and stories delivered straight to your inbox, roughly once a month.</p>
+      <form class="newsletter-form" onsubmit="return false;">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <div class="sidebar-box">
+      <h4>Recent Posts</h4>
+      <div class="recent-list">
+        <div class="recent-item">
+          <img class="recent-thumb" src="mobile health.jpg" alt="">
+          <div>
+            <h5>Mobile Health Clinic Reaches Three New Villages</h5>
+            <span>July 28, 2026</span>
+          </div>
+        </div>
+        <div class="recent-item">
+          <img class="recent-thumb" src="volunteernews.jpg" alt="">
+          <div>
+            <h5>Volunteer Mission Trip: July Recap</h5>
+            <span>July 20, 2026</span>
+          </div>
+        </div>
+        <div class="recent-item">
+          <img class="recent-thumb" src="farmer.jpg" alt="">
+          <div>
+            <h5>Farmers' Cooperative Doubles Harvest Yield</h5>
+            <span>July 12, 2026</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-box">
+      <h4>Categories</h4>
+      <div class="category-list">
+        <button data-filter="programs"><span>Programs</span><span>3</span></button>
+        <button data-filter="community"><span>Community</span><span>2</span></button>
+        <button data-filter="events"><span>Events</span><span>2</span></button>
+        <button data-filter="announcements"><span>Announcements</span><span>2</span></button>
+      </div>
+    </div>
+
+    <div class="sidebar-box">
+      <h4>Popular Tags</h4>
+      <div class="tag-cloud">
+        <span class="tag-pill">Education</span>
+        <span class="tag-pill">Health</span>
+        <span class="tag-pill">Water</span>
+        <span class="tag-pill">Volunteers</span>
+        <span class="tag-pill">Agriculture</span>
+        <span class="tag-pill">Awards</span>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<section class="cta-banner" id="donate">
+  <div class="cta-banner-inner">
+    <h2>Be Part Of The Next Story</h2>
+    <p>Every article here started with someone who chose to give, volunteer, or partner with us. Yours could be next.</p>
+    <div class="hero-ctas">
+      <a href="donate.html" class="btn btn-gold">Donate Now
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 4.5-4 8-8 11z"/></svg>
+      </a>
+      <a href="index.html#involved" class="btn btn-outline">Get Involved</a>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">
+        <div class="brand-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#d3a03e" stroke-width="1.8"><path d="M12 2v20M8 6h8M6 10c0 4 2.5 7 6 8 3.5-1 6-4 6-8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="brand-text">
+          <div class="name">New Hope Ministries</div>
+        </div>
+      </div>
+      <p class="desc">Restoring hope and transforming lives through the Gospel and practical support, one community at a time.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="our-story.html">About Us</a></li>
+        <li><a href="index.html#programs">Our Programs</a></li>
+        <li><a href="index.html#involved">Get Involved</a></li>
+        <li><a href="news.html">News</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Programs</h4>
+      <ul>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="health.html">Health</a></li>
+        <li><a href="agriculture.html">Agriculture</a></li>
+        <li><a href="community-development.html">Community Development</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul class="footer-contact">
+        <li>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Monrovia, Montserrado County, Liberia
+        </li>
+        <li>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 3a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2.1-.5c1 .3 2 .5 3 .7a2 2 0 0 1 1.7 2z"/></svg>
+          +231 XXX XXX XXX
+        </li>
+        <li>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m4 6 8 7 8-7"/></svg>
+          info@newhopeministries.org
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>&copy; 2026 New Hope Ministries Foundation. All rights reserved.</div>
+    <div class="footer-social">
+      <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+      <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+      <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="m10 9 5 3-5 3z" fill="currentColor" stroke="none"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var filterBtns = document.querySelectorAll('.filter-btn, .category-list button');
+  var cards = document.querySelectorAll('.news-card');
+  var searchInput = document.getElementById('newsSearch');
+  var loadMoreBtn = document.getElementById('loadMoreBtn');
+  var noResults = document.getElementById('noResults');
+  var activeFilter = 'all';
+  var revealedCount = 6;
+  var batchSize = 3;
+
+  function applyFilters(){
+    var query = searchInput.value.trim().toLowerCase();
+    var visibleIndex = 0;
+    var anyMatch = false;
+
+    cards.forEach(function(card, i){
+      var matchesCategory = activeFilter === 'all' || card.dataset.category === activeFilter;
+      var matchesSearch = query === '' || card.dataset.title.indexOf(query) !== -1;
+      var matches = matchesCategory && matchesSearch;
+
+      if(!matches){
+        card.classList.add('is-hidden');
+        return;
+      }
+
+      anyMatch = true;
+      // Reveal progressively within the visible set, respecting load-more count
+      if(visibleIndex < revealedCount){
+        card.classList.remove('is-hidden');
+      } else {
+        card.classList.add('is-hidden');
+      }
+      visibleIndex++;
+    });
+
+    noResults.classList.toggle('show', !anyMatch);
+    loadMoreBtn.style.display = (visibleIndex > revealedCount) ? 'inline-block' : 'none';
+  }
+
+  filterBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      document.querySelectorAll('.filter-btn').forEach(function(b){ b.classList.remove('active'); });
+      var matchingTopBtn = document.querySelector('.filter-btn[data-filter="' + btn.dataset.filter + '"]');
+      if(matchingTopBtn) matchingTopBtn.classList.add('active');
+      activeFilter = btn.dataset.filter;
+      revealedCount = 6;
+      applyFilters();
+    });
+  });
+
+  searchInput.addEventListener('input', function(){
+    revealedCount = 6;
+    applyFilters();
+  });
+
+  loadMoreBtn.addEventListener('click', function(){
+    revealedCount += batchSize;
+    applyFilters();
+  });
+
+  applyFilters();
+})();
+</script>
+
+</body>
+</html>

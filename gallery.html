@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — New Hope Ministries Foundation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <div class="brand-mark">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#152a4d" stroke-width="1.8"><path d="M12 2v20M8 6h8M6 10c0 4 2.5 7 6 8 3.5-1 6-4 6-8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <div class="brand-text">
+      <div class="name">NEW HOPE</div>
+      <div class="sub">MINISTRIES FOUNDATION</div>
+      <div class="tag">Restoring Hope. Transforming Lives.</div>
+    </div>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <div class="nav-item">
+      <span class="nav-label" tabindex="0">About Us
+        <svg class="caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </span>
+      <div class="dropdown">
+        <a href="mission-vision.html">Mission &amp; Vision</a>
+        <a href="our-story.html">Our Story</a>
+        <a href="team.html">Our Team</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <span class="nav-label" tabindex="0">Our Programs
+        <svg class="caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </span>
+      <div class="dropdown">
+        <a href="evangelism.html">Evangelism</a>
+        <a href="discipleship.html">Discipleship</a>
+        <a href="education.html">Education</a>
+        <a href="health.html">Health</a>
+        <a href="community-development.html">Community Development</a>
+        <a href="agriculture.html">Agriculture</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <span class="nav-label" tabindex="0">Get Involved
+        <svg class="caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </span>
+      <div class="dropdown">
+        <a href="donate.html">Donate</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="partner.html">Partner</a>
+      </div>
+    </div>
+    <a href="gallery.html" class="active">Gallery</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+  <a href="donate.html" class="donate-btn">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 4.5-4 8-8 11z"/></svg>
+    Donate Now
+  </a>
+  <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+</header>
+
+<section class="gallery-showcase">
+  <div class="showcase-inner">
+    <div class="eyebrow">MOMENTS OF HOPE</div>
+    <h1>Gallery</h1>
+    <p>A look inside the classrooms, clinics, farms, and communities where our work happens, one photo at a time.</p>
+    <div class="showcase-stats">
+      <div class="showcase-stat"><div class="num">16</div><div class="label">PHOTOS</div></div>
+      <div class="showcase-stat"><div class="num">6</div><div class="label">CATEGORIES</div></div>
+      <div class="showcase-stat"><div class="num">36</div><div class="label">COMMUNITIES</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="gallery-toolbar">
+  <div class="gallery-toolbar-inner">
+    <div class="gallery-filters" id="galleryFilters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="education">Education</button>
+      <button class="filter-btn" data-filter="health">Health</button>
+      <button class="filter-btn" data-filter="community">Community</button>
+      <button class="filter-btn" data-filter="agriculture">Agriculture</button>
+      <button class="filter-btn" data-filter="events">Events</button>
+    </div>
+    <div class="toolbar-right">
+      <div class="view-toggle" id="viewToggle">
+        <button class="active" data-density="comfortable" aria-label="Comfortable view">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+        </button>
+        <button data-density="dense" aria-label="Dense view">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="4" height="4"/><rect x="10" y="4" width="4" height="4"/><rect x="18" y="4" width="4" height="4"/><rect x="2" y="16" width="4" height="4"/><rect x="10" y="16" width="4" height="4"/><rect x="18" y="16" width="4" height="4"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="collections-strip">
+  <div class="collections-scroll" id="collectionsStrip">
+    <div class="collection-chip active" data-filter="all">
+      <img src="pic1.jpg" alt="">
+      <div class="cc-label"><b>All Photos</b><span>16 photos</span></div>
+    </div>
+    <div class="collection-chip" data-filter="education">
+      <img src="pic2.jpg" alt="">
+      <div class="cc-label"><b>Education</b><span>4 photos</span></div>
+    </div>
+    <div class="collection-chip" data-filter="health">
+      <img src="pic3.jpg" alt="">
+      <div class="cc-label"><b>Health</b><span>3 photos</span></div>
+    </div>
+    <div class="collection-chip" data-filter="community">
+      <img src="pic1.jpg" alt="">
+      <div class="cc-label"><b>Community</b><span>3 photos</span></div>
+    </div>
+    <div class="collection-chip" data-filter="agriculture">
+      <img src="pic5.jpg" alt="">
+      <div class="cc-label"><b>Agriculture</b><span>3 photos</span></div>
+    </div>
+    <div class="collection-chip" data-filter="events">
+      <img src="pic6.jpg" alt="">
+      <div class="cc-label"><b>Events</b><span>3 photos</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery-section">
+  <div class="gallery-grid" id="galleryGrid">
+
+    <div class="gallery-item" data-category="education" data-caption="Classroom session at our community school" data-meta="Bomi County &middot; March 2026">
+      <img src="pic1.jpg" alt="Classroom session at our community school" loading="lazy">
+      <div class="gallery-overlay-ui">
+        <div class="overlay-top">
+          <button class="overlay-icon-btn like-btn" aria-label="Like photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 4.5-4 8-8 11z"/></svg></button>
+        </div>
+        <div class="gallery-caption-premium"><b>Classroom session at our community school</b><span>Bomi County &middot; March 2026</span></div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="health" data-caption="Mobile health clinic checkup" data-meta="Grand Bassa County &middot; February 2026">
+      <img src="pic7.jpg" alt="Mobile health clinic checkup" loading="lazy">
+      <div class="gallery-overlay-ui">
+        <div class="overlay-top">
+          <button class="overlay-icon-btn like-btn" aria-label="Like photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 4.5-4 8-8 11z"/></svg></button>
+        </div>
+        <div class="gallery-caption-premium"><b>Mobile health clinic checkup</b><span>Grand Bassa County &middot; February 2026</span></div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="community" data-caption="Community gathering at sunset" data-meta="Montserrado County &middot; January 2026">
+      <img src="pic6.jpg" alt="Community gathering at sunset" loading="lazy">
+      <div class="gallery-overlay-ui">
+        <div class="overlay-top">
+          <button class="overlay-icon-btn like-btn" aria-label="Like photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 4.5-4 8-8 11z"/></svg></button>
+        </div>
+        <div class="gallery-caption-premium"><b>Community gathering at sunset</b><span>Montserrado County &middot; January 2026</span></div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="agriculture" data-caption="Farmers' cooperative harvest day" data-meta="Bong County &middot; December 2025">
+      <img src="pic5.jpg" alt="Farmers' cooperative harvest day" loading="lazy">
+      <div class="gallery-overlay-ui">
+        <div class="overlay-top">
+          <button class="overlay-icon-btn like-btn" aria-label="Like photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 4.5-4 8-8 11z"/></svg></button>
+        </div>
+        <div class="gallery-caption-premium"><b>Farmers' cooperative harvest day</b><span>Bong County &middot; December 2025</span></div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="events" data-caption="Volunteer mission trip group photo" data-meta="Monrovia &middot; November 2025">
+      <img src="pic2.jpg" alt="Volunteer mission trip group photo" loading="lazy">
+      <div class="gallery-overlay-ui">
+        <div class="overlay-top">
+          <button class="overlay-icon-btn like-btn" aria-label="Like photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 4.5-4 8-8 11z"/></svg></button>
+        </div>
+        <div class="gallery-caption-premium"><b>Volunteer mission trip group photo</b><span>Monrovia &middot; November 2025</span></div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="education" data-caption="New school opening day" data-meta="Bomi County &middot; October 2025">
+      <img src="pic5.jpg" alt="New school opening day" loading="lazy">
+      <div class="gallery-overlay-ui">
+        <div class="overlay-top">
+          <button class="overlay-icon-btn like-btn" aria-label="Like photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 4.5-4 8-8 11z"/></svg></button>
+        </div>
+        <div class="gallery-caption-premium"><b>New school opening day</b><span>Bomi County &middot; October 2025</span></div>
+      </div>
+    </div>
+
+    <div class="gallery-item is-hidden" data-category="health" data-caption="Nurse consulting with a mother and child" data-meta="Grand Bassa County &middot; September 2025">
+      <img src="pic6.jpg" alt="Nurse consulting with a mother and child" loading="lazy">
+      <div class="gallery-overlay-ui">
+        <div class="overlay-top">
+          <button class="overlay-icon-btn like-btn" aria-label="Like photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 4.5-4 8-8 11z"/></svg></button>
+        </div>
+        <div class="gallery-caption-premium"><b>Nurse consulting with a mother and child</b><span>Grand Bassa County &middot; September 2025</span></div>
+      </div>
+    </div>
+
+    <div class="gallery-item is-hidden" data-category="community" data-caption="Water well dedication ceremony" data-meta="Kolahun &middot; August 2025">
+      <img src="pic1.jpg" alt="Water well dedication ceremony" loading="lazy">
+      <div class="gallery-overlay-ui">
+        <div class="overlay-top">
+          <button class="overlay-icon-btn like-btn" aria-label="Like photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 4.5-4 8-8 11z"/></svg></button>
+        </div>
+        <div class="gallery-caption-premium"><b>Water well dedication ceremony</b><span>Kolahun &middot; August 2025</span></div>
+      </div>
+    </div>
+
+    <div class="gallery-item is-hidden" data-category="agriculture" data-caption="Training day in the demonstration field" data-meta="Bong County &middot; July 2025">
+      <img src="pic6.jpg" alt="Training day in the demonstration field" loading="lazy">
+      <div class="gallery-overlay-ui">
+        <div class="overlay-top">
+          <button class="overlay-icon-btn like-btn" aria-label="Like photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 4.5-4 8-8 11z"/></svg></button>
+        </div>
+        <div class="gallery-caption-premium"><b>Training day in the demonstration field</b><span>Bong County &middot; July 2025</span></div>
+      </div>
+    </div>
+
+    <div class="gallery-item is-hidden" data-category="events" data-caption="Annual fundraising banquet" data-meta="Monrovia &middot; June 2025">
+      <img src="pic2.jpg" alt="Annual fundraising banquet" loading="lazy">
+      <div class="gallery-overlay-ui">
+        <div class="overlay-top">
+          <button class="overlay-icon-btn like-btn" aria-label="Like photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 4.5-4 8-8 11z"/></svg></button>
+        </div>
+        <div class="gallery-caption-premium"><b>Annual fundraising banquet</b><span>Monrovia &middot; June 2025</span></div>
+      </div>
+    </div>
+
+    <div class="gallery-item is-hidden" data-category="education" data-caption="Scholarship recipients with their families" data-meta="Bomi County &middot; May 2025">
+      <img src="partner.jpg" alt="Scholarship recipients with their families" loading="lazy">
+      <div class="gallery-overlay-ui">
+        <div class="overlay-top">
+          <button class="overlay-icon-btn like-btn" aria-label="Like photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 4.5-4 8-8 11z"/></svg></button>
+        </div>
+        <div class="gallery-caption-premium"><b>Scholarship recipients with their families</b><span>Bomi County &middot; May 2025</span></div>
+      </div>
+    </div>
+
+    <div class="gallery-item is-hidden" data-category="community" data-caption="Sunday outreach and worship gathering" data-meta="Montserrado County &middot; April 2025">
+      <img src="pic5.jpg" alt="Sunday outreach and worship gathering" loading="lazy">
+      <div class="gallery-overlay-ui">
+        <div class="overlay-top">
+          <button class="overlay-icon-btn like-btn" aria-label="Like photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 4.5-4 8-8 11z"/></svg></button>
+        </div>
+        <div class="gallery-caption-premium"><b>Sunday outreach and worship gathering</b><span>Montserrado County &middot; April 2025</span></div>
+      </div>
+    </div>
+
+    <div class="gallery-item is-hidden" data-category="health" data-caption="Vaccination drive at the community center" data-meta="Grand Bassa County &middot; March 2025">
+      <img src="pic5.jpg" alt="Vaccination drive at the community center" loading="lazy">
+      <div class="gallery-overlay-ui">
+        <div class="overlay-top">
+          <button class="overlay-icon-btn like-btn" aria-label="Like photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 4.5-4 8-8 11z"/></svg></button>
+        </div>
+        <div class="gallery-caption-premium"><b>Vaccination drive at the community center</b><span>Grand Bassa County &middot; March 2025</span></div>
+      </div>
+    </div>
+
+    <div class="gallery-item is-hidden" data-category="agriculture" data-caption="New irrigation system installation" data-meta="Bong County &middot; February 2025">
+      <img src="pic5.jpg" alt="New irrigation system installation" loading="lazy">
+      <div class="gallery-overlay-ui">
+        <div class="overlay-top">
+          <button class="overlay-icon-btn like-btn" aria-label="Like photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 4.5-4 8-8 11z"/></svg></button>
+        </div>
+        <div class="gallery-caption-premium"><b>New irrigation system installation</b><span>Bong County &middot; February 2025</span></div>
+      </div>
+    </div>
+
+    <div class="gallery-item is-hidden" data-category="events" data-caption="Christmas outreach for children" data-meta="Monrovia &middot; December 2024">
+      <img src="pic1.jpg" alt="Christmas outreach for children" loading="lazy">
+      <div class="gallery-overlay-ui">
+        <div class="overlay-top">
+          <button class="overlay-icon-btn like-btn" aria-label="Like photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 4.5-4 8-8 11z"/></svg></button>
+        </div>
+        <div class="gallery-caption-premium"><b>Christmas outreach for children</b><span>Monrovia &middot; December 2024</span></div>
+      </div>
+    </div>
+
+    <div class="gallery-item is-hidden" data-category="education" data-caption="Library reading corner in use" data-meta="Bomi County &middot; November 2024">
+      <img src="pic5.jpg" alt="Library reading corner in use" loading="lazy">
+      <div class="gallery-overlay-ui">
+        <div class="overlay-top">
+          <button class="overlay-icon-btn like-btn" aria-label="Like photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 4.5-4 8-8 11z"/></svg></button>
+        </div>
+        <div class="gallery-caption-premium"><b>Library reading corner in use</b><span>Bomi County &middot; November 2024</span></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="gallery-grid" id="skeletonRow" style="margin-top:0;"></div>
+  <div class="load-sentinel" id="loadSentinel"></div>
+
+  <p class="no-results gallery-no-results" id="galleryNoResults">No photos in this category yet.</p>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-top">
+    <div class="lightbox-counter" id="lightboxCounter">1 / 16</div>
+    <div class="lightbox-actions">
+      <button id="lightboxZoom" aria-label="Zoom">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M8 11h6"/></svg>
+      </button>
+      <button id="lightboxDownload" aria-label="Download">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0-4-4m4 4 4-4"/><path d="M4 17v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/></svg>
+      </button>
+      <button id="lightboxShare" aria-label="Share">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-3.8M8.6 13.5l6.8 3.8"/></svg>
+      </button>
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+        <svg class="lightbox-close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="lightbox-stage">
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <img id="lightboxImg" src="" alt="">
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
+    </button>
+  </div>
+  <div class="lightbox-caption" id="lightboxCaption"></div>
+  <div class="lightbox-filmstrip" id="lightboxFilmstrip"></div>
+</div>
+
+<section class="cta-banner" id="donate">
+  <div class="cta-banner-inner">
+    <h2>Be Part Of The Next Photo</h2>
+    <p>Every picture here represents a life touched. Come see, and be part of, what happens next.</p>
+    <div class="hero-ctas">
+      <a href="donate.html" class="btn btn-gold">Donate Now
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 4.5-4 8-8 11z"/></svg>
+      </a>
+      <a href="index.html#involved" class="btn btn-outline">Get Involved</a>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">
+        <div class="brand-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#d3a03e" stroke-width="1.8"><path d="M12 2v20M8 6h8M6 10c0 4 2.5 7 6 8 3.5-1 6-4 6-8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="brand-text">
+          <div class="name">New Hope Ministries</div>
+        </div>
+      </div>
+      <p class="desc">Restoring hope and transforming lives through the Gospel and practical support, one community at a time.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="our-story.html">About Us</a></li>
+        <li><a href="index.html#programs">Our Programs</a></li>
+        <li><a href="index.html#involved">Get Involved</a></li>
+        <li><a href="news.html">News</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Programs</h4>
+      <ul>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="health.html">Health</a></li>
+        <li><a href="agriculture.html">Agriculture</a></li>
+        <li><a href="community-development.html">Community Development</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul class="footer-contact">
+        <li>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Monrovia, Montserrado County, Liberia
+        </li>
+        <li>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 3a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2.1-.5c1 .3 2 .5 3 .7a2 2 0 0 1 1.7 2z"/></svg>
+          +231 XXX XXX XXX
+        </li>
+        <li>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m4 6 8 7 8-7"/></svg>
+          info@newhopeministries.org
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>&copy; 2026 New Hope Ministries Foundation. All rights reserved.</div>
+    <div class="footer-social">
+      <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+      <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+      <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="m10 9 5 3-5 3z" fill="currentColor" stroke="none"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var topFilterBtns = document.querySelectorAll('#galleryFilters .filter-btn');
+  var collectionChips = document.querySelectorAll('.collection-chip');
+  var items = Array.prototype.slice.call(document.querySelectorAll('.gallery-item'));
+  var noResults = document.getElementById('galleryNoResults');
+  var grid = document.getElementById('galleryGrid');
+  var skeletonRow = document.getElementById('skeletonRow');
+  var sentinel = document.getElementById('loadSentinel');
+  var activeFilter = 'all';
+  var batchSize = 4;
+  var revealedCount = 6;
+
+  /* ---- Filtering (top pills + collection chips share state) ---- */
+  function setActiveFilter(filter){
+    activeFilter = filter;
+    revealedCount = 6;
+    topFilterBtns.forEach(function(b){ b.classList.toggle('active', b.dataset.filter === filter); });
+    collectionChips.forEach(function(c){ c.classList.toggle('active', c.dataset.filter === filter); });
+    applyFilter();
+  }
+
+  function applyFilter(){
+    var visibleIndex = 0;
+    var anyVisible = false;
+    items.forEach(function(item){
+      var matches = activeFilter === 'all' || item.dataset.category === activeFilter;
+      if(!matches){ item.classList.add('is-hidden'); return; }
+      anyVisible = true;
+      if(visibleIndex < revealedCount){
+        item.classList.remove('is-hidden');
+        requestAnimationFrame(function(){ observer.observe(item); });
+      } else {
+        item.classList.add('is-hidden');
+      }
+      visibleIndex++;
+    });
+    noResults.classList.toggle('show', !anyVisible);
+    skeletonRow.style.display = (visibleIndex > revealedCount) ? 'block' : 'none';
+  }
+
+  topFilterBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){ setActiveFilter(btn.dataset.filter); });
+  });
+  collectionChips.forEach(function(chip){
+    chip.addEventListener('click', function(){ setActiveFilter(chip.dataset.filter); });
+  });
+
+  /* ---- Density / view toggle ---- */
+  document.querySelectorAll('#viewToggle button').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      document.querySelectorAll('#viewToggle button').forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      grid.classList.toggle('dense', btn.dataset.density === 'dense');
+    });
+  });
+
+  /* ---- Reveal-on-scroll animation ---- */
+  var observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {threshold:0.1});
+  items.forEach(function(item){ if(!item.classList.contains('is-hidden')) observer.observe(item); });
+
+  /* ---- Infinite scroll (skeleton shimmer, then reveal next batch) ---- */
+  var loadingMore = false;
+  var scrollObserver = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting && !loadingMore){
+        var totalMatching = items.filter(function(i){ return activeFilter === 'all' || i.dataset.category === activeFilter; }).length;
+        if(revealedCount >= totalMatching) return;
+        loadingMore = true;
+        skeletonRow.innerHTML = '<div class="skeleton-item"></div><div class="skeleton-item"></div><div class="skeleton-item"></div><div class="skeleton-item"></div>';
+        skeletonRow.style.display = 'block';
+        setTimeout(function(){
+          revealedCount += batchSize;
+          applyFilter();
+          skeletonRow.innerHTML = '';
+          loadingMore = false;
+        }, 500);
+      }
+    });
+  }, {rootMargin:'200px'});
+  scrollObserver.observe(sentinel);
+
+  /* ---- Like buttons ---- */
+  document.querySelectorAll('.like-btn').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      btn.classList.toggle('liked');
+    });
+  });
+
+  /* ---- Lightbox ---- */
+  var lightbox = document.getElementById('lightbox');
+  var lightboxImg = document.getElementById('lightboxImg');
+  var lightboxCaption = document.getElementById('lightboxCaption');
+  var lightboxCounter = document.getElementById('lightboxCounter');
+  var lightboxFilmstrip = document.getElementById('lightboxFilmstrip');
+  var currentVisible = [];
+  var currentIndex = 0;
+  var zoomed = false;
+
+  function openLightbox(item){
+    currentVisible = items.filter(function(i){ return !i.classList.contains('is-hidden'); });
+    currentIndex = currentVisible.indexOf(item);
+    if(currentIndex === -1) currentIndex = 0;
+    buildFilmstrip();
+    showCurrent();
+    lightbox.classList.add('open');
+  }
+
+  function buildFilmstrip(){
+    lightboxFilmstrip.innerHTML = '';
+    currentVisible.forEach(function(item, i){
+      var thumb = document.createElement('img');
+      thumb.src = item.querySelector('img').src;
+      thumb.className = 'filmstrip-thumb';
+      thumb.addEventListener('click', function(){ currentIndex = i; showCurrent(); });
+      lightboxFilmstrip.appendChild(thumb);
+    });
+  }
+
+  function showCurrent(){
+    var item = currentVisible[currentIndex];
+    if(!item) return;
+    zoomed = false;
+    lightboxImg.classList.remove('zoomed');
+    lightboxImg.src = item.querySelector('img').src;
+    lightboxCaption.innerHTML = '<b>' + item.dataset.caption + '</b>' + (item.dataset.meta || '');
+    lightboxCounter.textContent = (currentIndex + 1) + ' / ' + currentVisible.length;
+    document.querySelectorAll('.filmstrip-thumb').forEach(function(t, i){
+      t.classList.toggle('active', i === currentIndex);
+    });
+  }
+
+  items.forEach(function(item){
+    item.addEventListener('click', function(){ openLightbox(item); });
+  });
+
+  document.getElementById('lightboxClose').addEventListener('click', function(){
+    lightbox.classList.remove('open');
+  });
+  document.getElementById('lightboxPrev').addEventListener('click', function(){
+    currentIndex = (currentIndex - 1 + currentVisible.length) % currentVisible.length;
+    showCurrent();
+  });
+  document.getElementById('lightboxNext').addEventListener('click', function(){
+    currentIndex = (currentIndex + 1) % currentVisible.length;
+    showCurrent();
+  });
+  document.getElementById('lightboxZoom').addEventListener('click', function(){
+    zoomed = !zoomed;
+    lightboxImg.classList.toggle('zoomed', zoomed);
+  });
+  document.getElementById('lightboxDownload').addEventListener('click', function(){
+    var link = document.createElement('a');
+    link.href = lightboxImg.src;
+    link.download = '';
+    link.click();
+  });
+  document.getElementById('lightboxShare').addEventListener('click', function(){
+    if(navigator.share){
+      navigator.share({title:'New Hope Ministries Foundation', url:lightboxImg.src}).catch(function(){});
+    } else {
+      navigator.clipboard && navigator.clipboard.writeText(lightboxImg.src);
+    }
+  });
+  lightbox.addEventListener('click', function(e){
+    if(e.target === lightbox) lightbox.classList.remove('open');
+  });
+  document.addEventListener('keydown', function(e){
+    if(!lightbox.classList.contains('open')) return;
+    if(e.key === 'Escape') lightbox.classList.remove('open');
+    if(e.key === 'ArrowLeft') document.getElementById('lightboxPrev').click();
+    if(e.key === 'ArrowRight') document.getElementById('lightboxNext').click();
+  });
+
+  applyFilter();
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volunteer — New Hope Ministries Foundation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <div class="brand-mark">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#152a4d" stroke-width="1.8"><path d="M12 2v20M8 6h8M6 10c0 4 2.5 7 6 8 3.5-1 6-4 6-8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <div class="brand-text">
+      <div class="name">NEW HOPE</div>
+      <div class="sub">MINISTRIES FOUNDATION</div>
+      <div class="tag">Restoring Hope. Transforming Lives.</div>
+    </div>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <div class="nav-item">
+      <span class="nav-label" tabindex="0">About Us
+        <svg class="caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </span>
+      <div class="dropdown">
+        <a href="mission-vision.html">Mission &amp; Vision</a>
+        <a href="our-story.html">Our Story</a>
+        <a href="team.html">Our Team</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <span class="nav-label" tabindex="0">Our Programs
+        <svg class="caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </span>
+      <div class="dropdown">
+        <a href="evangelism.html">Evangelism</a>
+        <a href="discipleship.html">Discipleship</a>
+        <a href="education.html">Education</a>
+        <a href="health.html">Health</a>
+        <a href="community-development.html">Community Development</a>
+        <a href="agriculture.html">Agriculture</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <span class="nav-label active" tabindex="0">Get Involved
+        <svg class="caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </span>
+      <div class="dropdown">
+        <a href="donate.html">Donate</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="partner.html">Partner</a>
+      </div>
+    </div>
+    <a href="gallery.html">Gallery</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+  <a href="donate.html" class="donate-btn">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 4.5-4 8-8 11z"/></svg>
+    Donate Now
+  </a>
+  <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+</header>
+
+<section class="about-showcase">
+  <div class="ashow-inner">
+    <div class="ashow-breadcrumb">
+      <a href="index.html">Home</a><span class="sep">/</span><span>Volunteer</span>
+    </div>
+    <div class="eyebrow">SERVE ALONGSIDE US</div>
+    <h1>Give Your Time, Change A Life</h1>
+    <p>From classrooms to clinics to short-term mission trips, there's a place for you on our team.</p>
+    <div class="ashow-stats">
+      <div class="ashow-stat"><div class="num">240+</div><div class="label">ACTIVE VOLUNTEERS</div></div>
+      <div class="ashow-stat"><div class="num">3,600+</div><div class="label">HOURS LAST YEAR</div></div>
+      <div class="ashow-stat"><div class="num">6</div><div class="label">PROGRAM AREAS</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="opp-section">
+  <div class="goal-header">
+    <div class="eyebrow" style="color:var(--gold-dark)">CURRENT OPPORTUNITIES</div>
+    <h2>Where You Can Serve</h2>
+    <p>Local and short-term opportunities across our program areas.</p>
+  </div>
+  <div class="opp-filters" id="oppFilters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="local">Local</button>
+    <button class="filter-btn" data-filter="trip">Mission Trip</button>
+    <button class="filter-btn" data-filter="remote">Remote / Skills-Based</button>
+  </div>
+  <div class="opp-grid" id="oppGrid">
+
+    <div class="opp-card" data-type="local">
+      <div class="opp-photo">
+        <span class="opp-badge">Local</span>
+        <img src="images.jpg" alt="Classroom teaching assistant">
+      </div>
+      <div class="opp-body">
+        <h3>Classroom Teaching Assistant</h3>
+        <div class="opp-meta">
+          <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Weekly, ongoing</span>
+        </div>
+        <p>Support our community school teachers with reading groups and classroom activities.</p>
+        <a href="#apply" class="read-more">Apply Now
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="opp-card" data-type="trip">
+      <div class="opp-photo">
+        <span class="opp-badge">Mission Trip</span>
+        <img src="mission.jpg" alt="Short-term mission trip">
+      </div>
+      <div class="opp-body">
+        <h3>Short-Term Mission Trip</h3>
+        <div class="opp-meta">
+          <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>7–10 days</span>
+        </div>
+        <p>Join a team on-site for construction, medical outreach, and children's programs.</p>
+        <a href="#apply" class="read-more">Apply Now
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="opp-card" data-type="local">
+      <div class="opp-photo">
+        <span class="opp-badge">Local</span>
+        <img src="mobile health.jpg" alt="Health clinic support">
+      </div>
+      <div class="opp-body">
+        <h3>Mobile Health Clinic Support</h3>
+        <div class="opp-meta">
+          <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Monthly outreach days</span>
+        </div>
+        <p>Assist our health team with registration, translation, and logistics during outreach visits.</p>
+        <a href="#apply" class="read-more">Apply Now
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="opp-card" data-type="remote">
+      <div class="opp-photo">
+        <span class="opp-badge">Remote</span>
+        <img src="skill base.jpg" alt="Skills-based volunteering">
+      </div>
+      <div class="opp-body">
+        <h3>Skills-Based Volunteering</h3>
+        <div class="opp-meta">
+          <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Flexible, remote</span>
+        </div>
+        <p>Offer expertise in design, writing, accounting, or grant-writing from anywhere.</p>
+        <a href="#apply" class="read-more">Apply Now
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="opp-card" data-type="local">
+      <div class="opp-photo">
+        <span class="opp-badge">Local</span>
+        <img src="community.jpg" alt="Event support">
+      </div>
+      <div class="opp-body">
+        <h3>Community Event Support</h3>
+        <div class="opp-meta">
+          <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>As-needed</span>
+        </div>
+        <p>Help set up, run, and break down community outreach events and gatherings.</p>
+        <a href="#apply" class="read-more">Apply Now
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="opp-card" data-type="trip">
+      <div class="opp-photo">
+        <span class="opp-badge">Mission Trip</span>
+        <img src="agriculture.jpg" alt="Agriculture training trip">
+      </div>
+      <div class="opp-body">
+        <h3>Agriculture Training Trip</h3>
+        <div class="opp-meta">
+          <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>2 weeks, seasonal</span>
+        </div>
+        <p>Work alongside our agriculture team teaching sustainable farming techniques.</p>
+        <a href="#apply" class="read-more">Apply Now
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="process-section">
+  <div class="goal-header">
+    <div class="eyebrow" style="color:var(--gold-dark)">HOW IT WORKS</div>
+    <h2>Getting Started Is Simple</h2>
+  </div>
+  <div class="process-grid">
+    <div class="process-step">
+      <div class="process-num">1</div>
+      <h4>Apply</h4>
+      <p>Fill out the form below with your interests and availability.</p>
+    </div>
+    <div class="process-step">
+      <div class="process-num">2</div>
+      <h4>Interview</h4>
+      <p>A short call with our volunteer coordinator to find the right fit.</p>
+    </div>
+    <div class="process-step">
+      <div class="process-num">3</div>
+      <h4>Onboard</h4>
+      <p>Orientation and any training needed for your role.</p>
+    </div>
+    <div class="process-step">
+      <div class="process-num">4</div>
+      <h4>Serve</h4>
+      <p>Join your team and start making a difference.</p>
+    </div>
+  </div>
+</section>
+
+<section class="apply-section" id="apply">
+  <div class="apply-card">
+    <h3>Volunteer Application</h3>
+    <form id="volunteerForm" novalidate>
+      <div class="form-row">
+        <div class="form-field ffield" id="vFieldFirst">
+          <input type="text" id="vFirstName" placeholder=" " required>
+          <label for="vFirstName">First Name</label>
+          <span class="field-check"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></span>
+        </div>
+        <div class="form-field ffield" id="vFieldLast">
+          <input type="text" id="vLastName" placeholder=" " required>
+          <label for="vLastName">Last Name</label>
+          <span class="field-check"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></span>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field ffield" id="vFieldEmail">
+          <input type="email" id="vEmail" placeholder=" " required>
+          <label for="vEmail">Email Address</label>
+          <span class="field-check"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></span>
+        </div>
+        <div class="form-field ffield" id="vFieldPhone">
+          <input type="tel" id="vPhone" placeholder=" ">
+          <label for="vPhone">Phone Number</label>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field full">
+          <label for="vArea">Area of Interest</label>
+          <select id="vArea">
+            <option>Teaching / Education</option>
+            <option>Health Outreach</option>
+            <option>Mission Trip</option>
+            <option>Skills-Based / Remote</option>
+            <option>Event Support</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field full">
+          <label for="vAvail">Availability</label>
+          <textarea id="vAvail" placeholder="Let us know your general availability (days, hours, or trip dates)"></textarea>
+        </div>
+      </div>
+      <button type="submit" class="contact-submit" id="vSubmit">Submit Application</button>
+      <p class="form-note">Our volunteer coordinator will follow up within a few days.</p>
+    </form>
+  </div>
+</section>
+
+<section class="cta-banner" id="donate">
+  <div class="cta-banner-inner">
+    <h2>Not Ready To Volunteer Yet?</h2>
+    <p>A one-time gift or ongoing partnership matters just as much.</p>
+    <div class="hero-ctas">
+      <a href="donate.html" class="btn btn-gold">Donate Instead</a>
+      <a href="partner.html" class="btn btn-outline">Explore Partnership</a>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">
+        <div class="brand-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#d3a03e" stroke-width="1.8"><path d="M12 2v20M8 6h8M6 10c0 4 2.5 7 6 8 3.5-1 6-4 6-8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="brand-text">
+          <div class="name">New Hope Ministries</div>
+        </div>
+      </div>
+      <p class="desc">Restoring hope and transforming lives through the Gospel and practical support, one community at a time.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="our-story.html">About Us</a></li>
+        <li><a href="index.html#programs">Our Programs</a></li>
+        <li><a href="index.html#involved">Get Involved</a></li>
+        <li><a href="news.html">News</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Programs</h4>
+      <ul>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="health.html">Health</a></li>
+        <li><a href="agriculture.html">Agriculture</a></li>
+        <li><a href="community-development.html">Community Development</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul class="footer-contact">
+        <li>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Monrovia, Montserrado County, Liberia
+        </li>
+        <li>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 3a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2.1-.5c1 .3 2 .5 3 .7a2 2 0 0 1 1.7 2z"/></svg>
+          +231 XXX XXX XXX
+        </li>
+        <li>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m4 6 8 7 8-7"/></svg>
+          info@newhopeministries.org
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>&copy; 2026 New Hope Ministries Foundation. All rights reserved.</div>
+    <div class="footer-social">
+      <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+      <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+      <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="m10 9 5 3-5 3z" fill="currentColor" stroke="none"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="vToast">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+  <span>Thanks for applying! Our team will be in touch soon.</span>
+</div>
+
+<script>
+(function(){
+  var filterBtns = document.querySelectorAll('#oppFilters .filter-btn');
+  var cards = document.querySelectorAll('.opp-card');
+  filterBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      filterBtns.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      var filter = btn.dataset.filter;
+      cards.forEach(function(card){
+        card.style.display = (filter === 'all' || card.dataset.type === filter) ? '' : 'none';
+      });
+    });
+  });
+
+  function wireField(fieldId, validate){
+    var field = document.getElementById(fieldId);
+    var input = field.querySelector('input, textarea');
+    input.addEventListener('input', function(){ field.classList.toggle('valid', validate(input.value)); });
+    input.addEventListener('blur', function(){ field.classList.toggle('valid', validate(input.value)); });
+  }
+  wireField('vFieldFirst', function(v){ return v.trim().length > 0; });
+  wireField('vFieldLast', function(v){ return v.trim().length > 0; });
+  wireField('vFieldEmail', function(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); });
+
+  var form = document.getElementById('volunteerForm');
+  var toast = document.getElementById('vToast');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    toast.classList.add('show');
+    form.reset();
+    document.querySelectorAll('.ffield').forEach(function(f){ f.classList.remove('valid'); });
+    setTimeout(function(){ toast.classList.remove('show'); }, 4000);
+  });
+})();
+</script>
+
+</body>
+</html>
