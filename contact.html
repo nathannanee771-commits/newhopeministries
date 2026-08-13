@@ -86,7 +86,7 @@
       <h4>Call Us</h4>
       <p>+231 XXX XXX XXX</p>
     </a>
-    <a class="qm-card" href="mailto:info@newhopeministries.org" style="--card-accent:#d3a03e">
+    <a class="qm-card" href="mailto:nathanielnanee771@gmail.com" style="--card-accent:#d3a03e">
       <div class="qm-icon"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m4 6 8 7 8-7"/></svg></div>
       <h4>Email Us</h4>
       <p>info@newhopeministries.org</p>
@@ -394,18 +394,85 @@
     charCount.textContent = message.value.length;
   });
 
-  /* ---- Form submit -> toast ---- */
-  var form = document.getElementById('contactForm');
-  var toast = document.getElementById('toast');
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    toast.classList.add('show');
-    form.reset();
-    document.querySelectorAll('.ffield').forEach(function(f){ f.classList.remove('valid'); });
-    charCount.textContent = '0';
-    setTimeout(function(){ toast.classList.remove('show'); }, 4000);
-  });
+  /* ---- Form submit -> Web3Forms ---- */
+var form = document.getElementById('contactForm');
+var toast = document.getElementById('toast');
 
+form.addEventListener('submit', async function(e){
+  e.preventDefault();
+
+  var submitButton = document.getElementById('contactSubmit');
+  var originalText = submitButton.textContent;
+
+  submitButton.disabled = true;
+  submitButton.textContent = 'Sending...';
+
+  var formData = new FormData();
+
+  formData.append('access_key', '12840ed4-2e74-429c-a296-ba581ea03da4');
+  formData.append('subject', 'New Contact Form Message - New Hope Ministries Foundation');
+
+  formData.append(
+    'name',
+    document.getElementById('firstName').value + ' ' +
+    document.getElementById('lastName').value
+  );
+
+  formData.append('email', document.getElementById('email').value);
+  formData.append('phone', document.getElementById('phone').value);
+
+  var department = document.querySelector('input[name="dept"]:checked');
+  formData.append('department', department ? department.value : '');
+
+  formData.append('message', document.getElementById('message').value);
+
+  try {
+    var response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formData
+    });
+
+    var result = await response.json();
+
+    if (result.success) {
+      toast.querySelector('span').textContent =
+        "Thank you — your message has been sent successfully.";
+
+      toast.classList.add('show');
+
+      form.reset();
+
+      document.querySelectorAll('.ffield').forEach(function(f){
+        f.classList.remove('valid');
+      });
+
+      charCount.textContent = '0';
+
+      setTimeout(function(){
+        toast.classList.remove('show');
+      }, 4000);
+
+    } else {
+      throw new Error(result.message || 'Submission failed');
+    }
+
+  } catch (error) {
+    console.error(error);
+
+    toast.querySelector('span').textContent =
+      "Sorry, we couldn't send your message. Please try again.";
+
+    toast.classList.add('show');
+
+    setTimeout(function(){
+      toast.classList.remove('show');
+    }, 4000);
+
+  } finally {
+    submitButton.disabled = false;
+    submitButton.textContent = originalText;
+  }
+});
   /* ---- FAQ accordion ---- */
   document.querySelectorAll('.faq-item').forEach(function(item){
     var question = item.querySelector('.faq-question');
